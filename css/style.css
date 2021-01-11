@@ -1,0 +1,55 @@
+.hide{
+    display: none;
+}
+.column{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+.tabs button{
+    background-color: #FFFFFF;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.tabs button:hover{
+    background-color: #DDDDDD;
+    transition: 0.5s;
+}
+.tabs button.active{
+    background-color: #BBBBBB;
+}
+.tabcontent{
+    display: none;
+}
+.tabcontent.active{
+    display:inline-block;
+}
+#log{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+h3{
+    font:bold medium serif;
+    margin:2px;
+    text-align:center;
+}
+table, tr,td{
+    margin:auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    padding:5px;
+    min-width:20px;
+    text-align:center;
+    height:25px;
+}
+textarea{
+    max-width: 90%;
+    width: 90%;
+    height: 300px;
+    max-height: 50vh;
+}
