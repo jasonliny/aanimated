@@ -1,4 +1,5 @@
 let currentstackposition=0;
+let running=false;
 function resetTextbox(){
     document.getElementById("inputtedCode").value = 
         "# Sample Program\n" + 
@@ -46,7 +47,9 @@ function readCode(){
 }
 function displayCodeToBeExecuted(){
     let buttonExe = document.getElementById("bexecute");
-    toggleDisplay(buttonExe);
+    if(running==false){
+        buttonExe.classList.remove("hide");
+    }
     let lines = readCode().trim().split("\n");
     let displayCodeArea = document.getElementById("submittedcode");
     displayCodeArea.innerHTML="";
@@ -73,6 +76,7 @@ function toggleDisplay(ele){
     ele.classList.toggle("hide");
 }
 async function executeCode(){
+    running=true;
     let buttonExe = document.getElementById("bexecute");
     toggleDisplay(buttonExe);
 
@@ -94,6 +98,7 @@ async function executeCode(){
     }
 
     toggleDisplay(buttonExe);
+    running=false;
 }
 async function executeCommand(line){
     line = line.replace(/  +/g, ' '); // replaces multiple spaces with a single space

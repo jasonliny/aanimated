@@ -1,7 +1,7 @@
 @keyframes backcolorchange{
-    0%{background-color:white;}
+    0%{background-color:#00000000;}
     50%{background-color:lime;}
-    100%{background-color:white;}
+    100%{background-color:#00000000;}
 }
 .backcolorchange{
     animation-name:backcolorchange;

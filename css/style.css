@@ -1,10 +1,18 @@
 .hide{
     display: none;
 }
-.column{
-    display: inline-block;
-    width: 48%;
-    vertical-align: top;
+.preamble{
+    margin:0px 2.5%;
+}
+.main-wrapper{
+    display:flex;
+    justify-content:space-around;
+}
+.code-area, .register-area{
+    padding:1rem;
+}
+.register-area{
+    margin-right:auto;
 }
 .tabs button{
     background-color: #FFFFFF;
@@ -38,7 +46,7 @@ h3{
 }
 table, tr,td{
     margin:auto;
-    border: 1px solid black;
+    border: 1px solid;
     border-collapse: collapse;
 }
 td{
@@ -48,8 +56,10 @@ td{
     height:25px;
 }
 textarea{
-    max-width: 90%;
+    width:48vw;
+    height:50vh;
+    /*max-width: 90%;
     width: 90%;
     height: 300px;
-    max-height: 50vh;
+    max-height: 50vh;*/
 }
